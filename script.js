@@ -1,23 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    const searchBar = document.getElementById('search-bar');
-    const movieCards = document.querySelectorAll('.movie-card');
-    const currentTheme = localStorage.getItem('theme') || 'light';
+  const themeSwitch = document.getElementById('theme-switch');
+  const themeLink = document.getElementById('theme-link');
 
-    document.body.classList.add(currentTheme);
+  themeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+    document.querySelectorAll('header, nav, .carousel-item').forEach(el => el.classList.toggle('dark-mode'));
+  });
 
-    themeToggle.addEventListener('click', () => {
-        const newTheme = document.body.classList.contains('light') ? 'dark' : 'light';
-        document.body.classList.remove('light', 'dark');
-        document.body.classList.add(newTheme);
-        localStorage.setItem('theme', newTheme);
+  const searchBar = document.getElementById('search-bar');
+  searchBar.addEventListener('input', () => {
+    const query = searchBar.value.toLowerCase();
+    document.querySelectorAll('.carousel-item').forEach(item => {
+      const title = item.innerText.toLowerCase();
+      item.style.display = title.includes(query) ? '' : 'none';
     });
-
-    searchBar.addEventListener('input', (e) => {
-        const searchText = e.target.value.toLowerCase();
-        movieCards.forEach(card => {
-            const title = card.querySelector('h2').textContent.toLowerCase();
-            card.style.display = title.includes(searchText) ? '' : 'none';
-        });
-    });
+  });
 });
