@@ -1,60 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кинопроекты 2025 года</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кинопроекты 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="darkmode.css" id="theme-link">
+  <script src="script.js" defer></script>
 </head>
-<body class="light">
-    <header class="header">
-        <div class="header-content">
-            <h1>Кинопроекты 2025</h1>
-            <input type="text" id="search-bar" placeholder="Поиск фильмов...">
-            <div class="theme-toggle" id="theme-toggle">
-                <span id="theme-icon"></span>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <section id="movie-grid">
-            <div class="movie-card">
-                <img src="images/wolf_man.jpg" alt="Wolf Man">
-                <h2>Человек-волк</h2>
-                <p>17 января 2025</p>
-                <button onclick="location.href='wolf_man.html'">Подробнее</button>
-            </div>
-            <div class="movie-card">
-                <img src="images/captain_america_brave_new_world.jpg" alt="Капитан Америка: Дивный новый мир">
-                <h2>Капитан Америка: Дивный новый мир</h2>
-                <p>Дата выхода: 14 февраля 2025</p>
-                <button onclick="location.href='captain_america_brave_new_world.html'">Подробнее</button>
-            </div>
-            <div class="movie-card">
-                <img src="images/snow_white.jpg" alt="Белоснежка">
-                <h2>Белоснежка</h2>
-                <p>Дата выхода: 21 марта 2025</p>
-            </div>
-            <article class="movie">
-                <img src="images/minecraft.jpg" alt="Майнкрафт">
-                <h2><a href="minecraft.html">Майнкрафт</a></h2>
-                <p>Дата выхода: 4 апреля 2025</p>
-            </article>
-            <article class="movie">
-                <img src="images/mickey_17.jpg" alt="Микки 17">
-                <h2><a href="mickey_17.html">Микки 17</a></h2>
-                <p>Дата выхода: 18 апреля 2025</p>
-            </article>
-            <article class="movie">
-                <img src="images/mission_impossible_the_final_reckoning.jpg" alt="Миссия невыполнима: Последняя расплата">
-                <h2><a href="mission_impossible_the_final_reckoning.html">Миссия невыполнима: Последняя расплата</a></h2>
-                <p>Дата выхода: 23 мая 2025</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Kubinskiy</p>
-    </footer>
+<body>
+  <header>
+    <h1>Кинопроекты 2025</h1>
+    <div class="theme-toggle">
+      <span>🌞</span>
+      <input type="checkbox" id="theme-switch">
+      <span>🌜</span>
+    </div>
+    <input type="text" id="search-bar" placeholder="Поиск фильмов...">
+  </header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="movies.html">Фильмы</a>
+    <a href="series.html">Сериалы</a>
+  </nav>
+
+  <section id="movie-carousel">
+    <h2>Фильмы</h2>
+    <div class="carousel">
+      <!-- Добавь сюда карусель с фильмами (аналогично в movies.html и series.html) -->
+      <div class="carousel-item">
+        <img src="images/Paddington_in_Peru.jpg" alt="Paddington in Peru">
+        <p>Paddington in Peru - 10 января</p>
+      </div>
+      <!-- Другие фильмы по списку -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Все права защищены.</p>
+  </footer>
 </body>
 </html>
