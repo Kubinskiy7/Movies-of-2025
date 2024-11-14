@@ -7,28 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <header>
-        <h1>Кинопроекты 2025 года</h1>
-        <button id="theme-toggle">Светлая/Тёмная тема</button>
+<body class="light">
+    <header class="header">
+        <div class="header-content">
+            <h1>Кинопроекты 2025</h1>
+            <input type="text" id="search-bar" placeholder="Поиск фильмов...">
+            <div class="theme-toggle" id="theme-toggle">
+                <span id="theme-icon"></span>
+            </div>
+        </div>
     </header>
-    <main>
-        <section class="movie-list">
-            <article class="movie">
+    <main class="main">
+        <section id="movie-grid">
+            <div class="movie-card">
                 <img src="images/wolf_man.jpg" alt="Wolf Man">
-                <h2><a href="wolf_man.html">Wolf Man</a></h2>
-                <p>Дата выхода: 17 января 2025</p>
-            </article>
-            <article class="movie">
+                <h2>Человек-волк</h2>
+                <p>17 января 2025</p>
+                <button onclick="location.href='wolf_man.html'">Подробнее</button>
+            </div>
+            <div class="movie-card">
                 <img src="images/captain_america_brave_new_world.jpg" alt="Капитан Америка: Дивный новый мир">
-                <h2><a href="captain_america_brave_new_world.html">Капитан Америка: Дивный новый мир</a></h2>
+                <h2>Капитан Америка: Дивный новый мир</h2>
                 <p>Дата выхода: 14 февраля 2025</p>
-            </article>
-            <article class="movie">
+                <button onclick="location.href='captain_america_brave_new_world.html'">Подробнее</button>
+            </div>
+            <div class="movie-card">
                 <img src="images/snow_white.jpg" alt="Белоснежка">
-                <h2><a href="snow_white.html">Белоснежка</a></h2>
+                <h2>Белоснежка</h2>
                 <p>Дата выхода: 21 марта 2025</p>
-            </article>
+            </div>
             <article class="movie">
                 <img src="images/minecraft.jpg" alt="Майнкрафт">
                 <h2><a href="minecraft.html">Майнкрафт</a></h2>
