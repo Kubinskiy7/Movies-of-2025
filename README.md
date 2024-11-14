@@ -22,12 +22,12 @@
 
 	1.	Склонируйте репозиторий:
 
-git clone https://github.com/username/kinoproekty-2025.git
+git clone https://github.com/Kubinskiy7/Movies-of-2025.git
 
 
 	2.	Перейдите в папку проекта:
 
-cd kinoproekty-2025
+cd movies-of-2025
 
 
 	3.	Откройте index.html в браузере.
