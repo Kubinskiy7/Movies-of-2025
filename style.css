@@ -69,3 +69,32 @@ header {
 .menu-item.active {
   font-weight: bold;
 }
+
+.details-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.details-poster img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.details-info {
+  max-width: calc(100% - 220px);
+}
+
+.details-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.details-trailer {
+  padding: 20px;
+}
+
+.details-trailer iframe {
+  border: none;
+  border-radius: 8px;
+}
