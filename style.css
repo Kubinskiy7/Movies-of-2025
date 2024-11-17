@@ -1,86 +1,71 @@
+/* Общий стиль */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
   margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  overflow: hidden; /* Отключаем прокрутку */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.theme-toggle {
-  display: flex;
-  align-items: center;
-}
-
-.theme-toggle input {
-  appearance: none;
-  width: 40px;
-  height: 20px;
-  background: #ddd;
-  border-radius: 10px;
-  position: relative;
-  cursor: pointer;
-}
-
-.theme-toggle input:checked {
-  background: #333;
-}
-
-.theme-toggle span {
-  margin: 0 5px;
-}
-
-.theme-toggle input::before {
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background: #fff;
-  border-radius: 50%;
-  top: 2px;
-  left: 2px;
-  transition: 0.3s;
-}
-
-.theme-toggle input:checked::before {
-  left: 22px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 1em;
-  background-color: #222;
+  text-align: center;
+  padding: 10px;
+  background: #6200ea;
   color: #fff;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+.carousel-section {
+  padding: 10px;
 }
 
 .carousel {
   display: flex;
   overflow-x: auto;
-  gap: 20px;
-  padding: 20px;
+  gap: 10px;
 }
 
 .carousel-item {
-  min-width: 200px;
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
 }
 
 .carousel-item img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.more-btn {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 8px 12px;
+  background: #6200ea;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #6200ea;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.menu-item {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu-item.active {
+  font-weight: bold;
 }
